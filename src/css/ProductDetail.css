@@ -1,0 +1,152 @@
+/* Container and Card */
+.detail-container {
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-card {
+  width: 95%;
+  max-width: 1200px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Content Split */
+.detail-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.detail-image-container {
+  flex: 1 1 45%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+}
+
+.detail-info {
+  flex: 1 1 55%;
+  padding: 20px;
+}
+
+.detail-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.detail-description {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.detail-price {
+  font-size: 22px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.detail-extra-info {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Button Group */
+.detail-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.detail-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-cart {
+  background: #007bff;
+}
+
+.btn-buy {
+  background: #ff9800;
+}
+
+.btn-wishlist {
+  background: #dc3545;
+}
+
+.btn-wishlist.active {
+  background: #c2185b;
+}
+
+.btn-review {
+  background: #6c757d;
+}
+
+/* Reviews */
+.review-section {
+  max-width: 1200px;
+  width: 95%;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  transition: opacity 0.5s ease;
+}
+
+.review-card {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 12px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.review-stars {
+  color: gold;
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,142 @@
+.product-card {
+  width: 300px;
+  text-align: left;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18); /* Darker shadow */
+  background: linear-gradient(135deg, #ffffff, #f0f0ff);
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  animation: cardEnter 0.6s ease-in-out forwards;
+  padding: 15px;
+  border: 1px solid rgba(102, 94, 94, 0.2); /* Blackish border */
+}
+
+@keyframes cardEnter {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.product-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 20px 40px rgba(85, 77, 77, 0.25);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f0f8ff;
+  border: 2px solid #d0e6ff;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 6px; /* tighter gap */
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.image-container:hover .product-image {
+  transform: scale(1.15);
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #e22626;
+  cursor: pointer;
+  background: white;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-info {
+  padding: 2px 0;
+}
+
+.product-title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px; /* reduced gap */
+}
+
+.product-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.product-description {
+  font-size: 13px;
+  color: #7f8c8d;
+  margin: 2px 0;
+  height: 34px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin: 2px 0; /* tighter */
+}
+
+.star-icon {
+  color: #f39c12;
+  font-size: 13px;
+}
+
+.review-count {
+  font-size: 12px;
+  color: gray;
+  margin-left: 4px;
+}
+
+.add-to-cart {
+  width: 85%;
+  padding: 12px; /* thicker button */
+  border: 1px solid black;
+  border-radius: 25px;
+  background: white;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  margin: 10px auto 0;
+  display: block;
+}
+
+.add-to-cart:hover {
+  background: black;
+  color: white;
+  transform: scale(1.05);
+}
