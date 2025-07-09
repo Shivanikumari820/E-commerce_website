@@ -5,7 +5,7 @@ import axios from "axios";
 import { useDispatch } from 'react-redux';
 import { addtoCart } from '../cartSlice';
 import { useNavigate } from 'react-router-dom';
-import '../css/Search.css';
+import '../css/search.css';
 
 const Search = () => {
     const [mypro, setMypro] = useState("");
