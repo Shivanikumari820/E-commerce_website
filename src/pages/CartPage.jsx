@@ -169,6 +169,7 @@ const styles = {
     cursor: "pointer",
     transition: "transform 0.2s ease",
   },
+
   footer: {
     marginTop: "30px",
     paddingTop: "20px",
@@ -208,6 +209,9 @@ const styles = {
     textAlign: "center",
     whiteSpace: "nowrap",
   },
+
 };
 
+
 export default Cart;
+
